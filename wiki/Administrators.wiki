@@ -3,9 +3,9 @@
 = Introduction =
 
 The main admin page contains three links to subpages that implement the functionality listed below.  The three links are:
-  * Classes
-  * Search Applicants
-  * Assignments
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminClasses Classes]
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminSearchApplicants Search Applicants]
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminAssignments Assignments]
 
 = Details =
 Administrators will:
