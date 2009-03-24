@@ -1,5 +1,4 @@
-#summary One-sentence summary of this page.
-Summarizes the TA1 project for cs373.
+#summary Summarizes the TA1 project for cs373.
 = Introduction =
 
 The proposed system for assigning TAs is analogous to match-making
