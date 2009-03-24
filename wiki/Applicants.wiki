@@ -26,13 +26,21 @@ Applicants will provide the following information:
     * followed by a '-'
     * followed by any 4 digits
   # Degree Type - valid input is:
+    * one of the radio buttons is selected.  This is validated by checking that the value of the element isn't an empty string.
   # Supervising professor - valid input is:
+    * one of the names is selected from the drop-down list.  This is validated by checking that the value of the element isn't an empty string.
   # Citizen or resident - valid input is:
+    * one of the radio buttons is selected.  This is validated by checking that the value of the element isn't an empty string.
   # Native english speaker - valid input is:
+    * any input is valid.  They either are a native English speaker, or they aren't.
   # TA history - valid input is:
+    * 0 or more of the checkboxes are checked, i.e. any input is valid.
   # Programming languages - valid input is:
+    * 0 or more of the checkboxes are checked, i.e. any input is valid.
   # Areas of specialization - valid input is:
-  # Course qualified to teach - valid input is:
+    * one or more specializations is selected from the list.  This is validated by checking that the value of the element isn't an empty string.
+  # Courses qualified to teach - valid input is:
+    * 0 or more of the checkboxes are checked, i.e. any input is valid.
 
 The system will keep a record of the semesters in which the applicant
 applied to be a TA and the history of TA assignments that the Applicant
