@@ -1,0 +1,28 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+Administrators will:
+
+  # Input, view, and edit the list of classes that need TAs. For each course, the administrators will input:
+    # the class number/name (e.g. cs302)
+    # the instructor's name
+    # the expected enrollment
+    # the number of TAs needed
+    # the number of TAs assigned.
+  # Make queries of the system, like:
+    # show me the Applicants who specify Networks as their area of specialization
+    # show me the Applicants, in rank order, who specify cs302 as a course they feel qualified to teach
+    # show me the Applicants, in rank order, who are native English speakers and have specified Operating Systems as their area of specialization
+    # show me the Applicants who have TA'ed cs352 previously
+    # show me the classes for which the estimated TA allotment is 2
+    # show me the classes that will be taught by Downing
+    # show me the classes that have not been assigned a TA
+    # show me the classes that John Doe is assigned to TA.
+    This list of queries is illustrative, but not exhaustive.
+  # Ask the system for suggested assignments via the SMP algorithm.
+  # View, edit the assignment of TAs to classes.
