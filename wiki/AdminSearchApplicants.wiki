@@ -4,7 +4,7 @@
 
 The Search Applicants subpage for Admin will search the database of TA's using the fields listed below.
   * An entry for all fields is not required for a valid search.
-  * Each field should have an option to indicate to order the results by this field.
+  * Each field should have an option to flag that the results are to be ordered by this field.
 
 = Details =
 
