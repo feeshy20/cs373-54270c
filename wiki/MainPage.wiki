@@ -8,11 +8,9 @@ software (think E-Harmony).
 
 There are three groups of users for the proposed system:
 
-1. WikiApplicants will specify their background and the (types of) courses
-they are best qualified to TA
+1. [http://code.google.com/p/cs373-54270c/w/Applicants Applicants] will specify their background and the (types of) courses they are best qualified to TA
 
-2. Instructors will specify the (type of) graduate student(s) they would
-like to have serve as TA(s) in their class
+2. [http://code.google.com/p/cs373-54270c/w/Instructors Instructors] will specify the (type of) graduate student(s) they would like to have serve as TA(s) in their class
 
-3. Administrators will edit and/or accept the matchings suggested by the
+3. [http://code.google.com/p/cs373-54270c/w/Administrators Administrators] will edit and/or accept the matchings suggested by the
 system
