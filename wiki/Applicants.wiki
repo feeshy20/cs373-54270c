@@ -6,10 +6,10 @@
 = Details =
 Applicants will provide the following information:
 
-  #1. phone
-  #2. e-mail
-  #3. major field
-4. admission date
+  #phone
+  #e-mail
+  #major field
+  #admission date
 5. PhD or Masters
 7. supervising professor
 8. citizen or resident
