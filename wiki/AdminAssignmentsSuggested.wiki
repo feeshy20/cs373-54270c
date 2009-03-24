@@ -1,0 +1,5 @@
+#summary Suggested Assignments
+
+= Suggested Assignments =
+
+Displays suggested TA assignments by running SMP algorithm
