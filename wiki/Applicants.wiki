@@ -6,8 +6,8 @@
 = Details =
 Applicants will provide the following information:
 
-1. phone
-2. e-mail
+#1. phone
+#2. e-mail
 3. major field
 4. admission date
 5. PhD or Masters
