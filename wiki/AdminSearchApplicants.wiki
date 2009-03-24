@@ -41,3 +41,16 @@ The Search Applicants subpage for Admin will search the database of TA's using t
     * one or more specializations is selected from the list.  This is validated by checking that the value of the element isn't an empty string.
   # Courses qualified to teach - valid input is:
     * 0 or more of the checkboxes are checked, i.e. any input is valid.
+
+= Example Searches =
+    show me the Applicants who specify Networks as their area of
+    specialization
+
+    show me the Applicants, in rank order, who specify cs302 as a course
+    they feel qualified to teach
+
+    show me the Applicants, in rank order, who are native English
+    speakers and have specified Operating Systems as their area of
+    specialization
+
+    show me the Applicants who have TA'ed cs352 previously
