@@ -8,11 +8,11 @@ software (think E-Harmony).
 
 There are three groups of users for the proposed system:
 
-1. http://cs373-54270c/Applicants will specify their background and the (types of) courses
+1. Applicants will specify their background and the (types of) courses
 they are best qualified to TA
 
-2. http://cs373-54270c/Instructors will specify the (type of) graduate student(s) they would
+2. Instructors will specify the (type of) graduate student(s) they would
 like to have serve as TA(s) in their class
 
-3. http://cs373-54270c/Administrators will edit and/or accept the matchings suggested by the
+3. Administrators will edit and/or accept the matchings suggested by the
 system
