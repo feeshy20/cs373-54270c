@@ -6,7 +6,7 @@ software (think E-Harmony).
 
 = Details =
 
-There are three groups of users for the proposed system:
+The are three groups of users for the proposed system:
 
 1. [http://code.google.com/p/cs373-54270c/wiki//Applicants Applicants] will specify their background and the (types of) courses they are best qualified to TA
 
@@ -14,3 +14,8 @@ There are three groups of users for the proposed system:
 
 3. [http://code.google.com/p/cs373-54270c/wiki//Administrators Administrators] will edit and/or accept the matchings suggested by the
 system
+
+This page has one field, a login field:
+  * valid input is one of either "ta", "admin", or "faculty"
+
+Upon successful login, the user is redirected to the appropriate page.
