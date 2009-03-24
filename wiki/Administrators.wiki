@@ -1,9 +1,11 @@
-#summary One-sentence summary of this page.
+#summary Main Admin Page
 
 = Introduction =
 
-Add your content here.
-
+The main admin page contains three links to subpages that implement the functionality listed below.  The three links are:
+  * Classes
+  * Search Applicants
+  * Assignments
 
 = Details =
 Administrators will:
