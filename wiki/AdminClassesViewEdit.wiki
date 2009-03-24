@@ -2,12 +2,6 @@
 
 = Introduction =
 
-Add your content here.
-
+This page queries the database and lists all classes and each classes' data.  Each course name will have a link to an [http://about.blank Edit Class] page, similar to the Add New class page.
 
 = Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
