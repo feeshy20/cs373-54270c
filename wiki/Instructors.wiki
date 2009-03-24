@@ -1,0 +1,12 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+= Details =
+
+Instructors will provide the following information for each course:
+
+  # Specific wanted students
+  # Specific unwanted students
+  # Native English speaker
+  # Background in a particular area of specialization
