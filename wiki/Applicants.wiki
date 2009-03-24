@@ -6,10 +6,25 @@
 = Details =
 Applicants will provide the following information:
 
-  # Phone
-  # E-mail
-  # Major field
-  # Admission date
+  # Phone - A valid phone number is specified as:
+    * 3 digits at the beginning of the field
+    * followed by a hyphen
+    * followed by exactly 4 digits, and nothing else.
+  # E-mail - A valid email address is specified as:
+    * 0 or more alphanumeric characters or a '.' at the beginning of the field
+    * followed by at least one alphanumeric character
+    * followed by 0 or more alphanumeric characters or a '.'
+    * followed by '@'
+    * followed by 1 or more groups of (1 or more alphanumeric characters followed by a '.')
+    * followed by 1 or more alphanumeric characters, and nothing else
+  # Major field - A valid selection for major is:
+    * the selection is valid if the user selected something from the drop-down menu.  This is enforced by checking that the value of the select element isn't an empty string.
+  # Admission date - A valid admission date is specified as:
+    * a 0 followed by any number in range 1-9 at the beginning of the field OR a 1 followed by 0, 1, or 2 at the beginning of the field
+    * followed by a '-'
+    * followed by a 0 followed by any number in range 1-9 OR followed by a 1 or 2 followed by any digit OR a 3 followed by a 0 or 1
+    * followed by a '-'
+    * followed by any 4 digits
   # PhD or Masters
   # Supervising professor
   # Citizen or resident
