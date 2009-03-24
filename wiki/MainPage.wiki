@@ -8,7 +8,7 @@ software (think E-Harmony).
 
 There are three groups of users for the proposed system:
 
-1. Applicants will specify their background and the (types of) courses
+1. WikiApplicants will specify their background and the (types of) courses
 they are best qualified to TA
 
 2. Instructors will specify the (type of) graduate student(s) they would
