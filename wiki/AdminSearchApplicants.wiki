@@ -4,7 +4,9 @@
 
 The design for this form needs to be refined to better serve searches like those in the given examples.
 
-The Search Applicants subpage for Admin will search the database of TA's using the fields listed below.  An entry for all fields is not required for a valid search.
+The Search Applicants subpage for Admin will search the database of TA's using the fields listed below.  
+  * An entry for all fields is not required for a valid search.
+  * Each field should have an option to indicate to order the results by this field.
 
 = Details =
 
