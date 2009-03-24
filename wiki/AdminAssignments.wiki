@@ -1,13 +1,7 @@
 #summary One-sentence summary of this page.
 
-= Introduction =
+= Assignments =
 
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+The Assignments subpage for Admin has two links:
+  * Suggested Assignments, which runs the SMP algorithm
+  * TA Assignments, which displays a list of TA's and the classes that they are assigned to.  This will have a selector which indicates whether to list by TA or list by course.
