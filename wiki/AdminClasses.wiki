@@ -3,6 +3,6 @@
 = Classes =
 
 The class subpage contains links the administrator's tools for working with courses.  It contains the following links:
-  * Add New
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminClassesAddNew Add New]
   * View/Edit
   * Search
