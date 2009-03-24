@@ -1,13 +1,8 @@
-#summary One-sentence summary of this page.
+#summary Classes subpage for Admin
 
-= Introduction =
+= Classes =
 
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+The class subpage contains links the administrator's tools for working with courses.  It contains the following links:
+  * Add New
+  * View/Edit
+  * Search
