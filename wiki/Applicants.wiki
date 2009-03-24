@@ -6,25 +6,24 @@
 = Details =
 Applicants will provide the following information:
 
-  #phone
-  #e-mail
-  #major field
-  #admission date
-5. PhD or Masters
-7. supervising professor
-8. citizen or resident
-9. native english speaker
-10. TA history
-12. programming languages
-13. area of specialization
-14. course qualified to teach
+  # Phone
+  # E-mail
+  # Major field
+  # Admission date
+  # PhD or Masters
+  # Supervising professor
+  # Citizen or resident
+  # Native english speaker
+  # TA history
+  # Programming languages
+  # Area of specialization
+  # Course qualified to teach
 
 The system will keep a record of the semesters in which the applicant
 applied to be a TA and the history of TA assignments that the Applicant
 received. The system should be able to answer queries like these posed
 by Administrators:
 
-    find the applicants that have applied 3 or more times and who have
-    received 0 assignments
+  * find the applicants that have applied 3 or more times and who have received 0 assignments
 
-    find the applicants who have been assigned to cs315 previously
+  * find the applicants who have been assigned to cs315 previously
