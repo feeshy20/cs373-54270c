@@ -2,5 +2,5 @@
 = Assignments =
 
 The Assignments subpage for Admin has two links:
-  * [http://about:blank Suggested Assignments], which runs the SMP algorithm
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminAssignmentsSuggested Suggested Assignments], which runs the SMP algorithm
   * [http://about:blank TA Assignments], which displays a list of TA's and the classes that they are assigned to.  This will have a selector which indicates whether to list by TA or list by course.
