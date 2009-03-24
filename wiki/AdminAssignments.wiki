@@ -1,5 +1,4 @@
-#summary One-sentence summary of this page.
-
+#summary Assignment suggestion and implementation
 = Assignments =
 
 The Assignments subpage for Admin has two links:
