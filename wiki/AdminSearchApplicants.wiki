@@ -2,6 +2,8 @@
 
 = Introduction =
 
+The design for this form needs to be refined to better serve searches like those in the given examples.
+
 The Search Applicants subpage for Admin will search the database of TA's using the fields listed below.  An entry for all fields is not required for a valid search.
 
 = Details =
