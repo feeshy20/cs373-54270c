@@ -4,5 +4,5 @@
 
 The class subpage contains links the administrator's tools for working with courses.  It contains the following links:
   * [http://code.google.com/p/cs373-54270c/wiki/AdminClassesAddNew Add New]
-  * View/Edit
-  * Search
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminClassesViewEdit View/Edit]
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminClassesSearch Search]
