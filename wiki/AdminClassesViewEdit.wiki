@@ -9,3 +9,10 @@ This page queries the database and lists all classes and each classes' data.  Ea
 http://localhost:8080/admin/classes/view
 
 = Details =
+
+A table is displayed of all current classes in the database.  The columns are as follows (from left to right):
+  * Course Designation
+  * Instructor name
+  * Expected Enrollment
+  * TA's Assigned
+  * TA's Needed
