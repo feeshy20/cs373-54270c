@@ -9,6 +9,10 @@ This form will add a new class to the database, using the following fields:
   # Number of TAs Needed
   # Number of TAs Assigned
 
+= Local URL =
+
+http://localhost:8080/admin/classes/addnew
+
 = Details =
 
 Administrator will provide the following information:
