@@ -2,7 +2,7 @@
 
 = Classes =
 
-The class subpage contains links the administrator's tools for working with courses.  It contains the following links:
+The class subpage of [http://code.google.com/p/cs373-54270c/wiki/Admin Admin] contains links the administrator's tools for working with courses.  It contains the following links:
   * [http://code.google.com/p/cs373-54270c/wiki/AdminClassesAddNew Add New]
   * [http://code.google.com/p/cs373-54270c/wiki/AdminClassesViewEdit View/Edit]
   * [http://code.google.com/p/cs373-54270c/wiki/AdminClassesSearch Search]
