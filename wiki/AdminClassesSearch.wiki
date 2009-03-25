@@ -11,6 +11,19 @@ The Search subpage for AdminClasses will search the database of courses using th
 http://localhost:8080/admin/classes/search
 
 = Details =
+This form has four criteria fields:
+  # Estimated TA Allotment - valid input is:
+    * 1 or 2 digits
+  # Instructor Name - valid input is:
+    * A first name made of characters
+    * followed by a required middle initial with an optional period
+    * followed by a last name made of characters 
+  # Option to show only courses with no TA assigned - valid input is:
+    * any input is valid, checked or not checked
+  # Assigned TA's Name - valid input is:
+    * A first name made of characters
+    * followed by a required middle initial with an optional period
+    * followed by a last name made of characters 
 
 = Example Queries =
     show me the classes for which the estimated TA allotment is 2
