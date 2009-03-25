@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This page queries the database and lists all classes and each classes' data.  Each course name will have a link to an [http://about.blank Edit Class] page, similar to the Add New class page.
+This page queries the database and lists all classes and each classes' data.  Each course name will have a link to an [http://code.google.com/p/cs373-54270c/wiki/AdminClassesEditClass Edit Class] page, similar to the Add New class page.
 
 = Local URL =
 
