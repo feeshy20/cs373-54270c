@@ -2,9 +2,11 @@
 
 = Introduction =
 
-= Local URL =
+= URL =
 
-http://localhost:8080/faculty
+local project: http://localhost:8080/faculty
+
+live release : http://54270c.appspot.com/faculty
 
 = Details =
 
