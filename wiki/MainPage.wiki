@@ -4,6 +4,10 @@
 The proposed system for assigning TAs is analogous to match-making
 software (think E-Harmony).
 
+= Local URL =
+
+http://localhost:8080/
+
 = Details =
 
 The are three groups of users for the proposed system:
