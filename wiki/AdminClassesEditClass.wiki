@@ -2,10 +2,31 @@
 
 = Introduction =
 
-This form queries the database for a given class and then allows the user to edit all fields
+This form queries the database for a given class and then allows the user to edit all fields.
 
 = Local URL =
 
 http://localhost:8080/admin/classes/view/edit
 
+= Class ID =
+
+The class ID should be displayed at the top of the page.  Ideally this is some sort of ID Number associated with the classes entry in the database.  This number should be displayed instead of a course name because it will never change, whereas the course name etc can be changed.  
+
 = Details =
+
+Administrator can edit the following information:
+
+  # Course Designation - valid input is:
+    * 1 - 3 characters
+    * followed by exactly 3 digits
+    * followed by 0 or 1 character(s)
+  # Instructor Name - valid input is:
+    * A first name made of characters
+    * followed by a required middle initial with an optional period
+    * followed by a last name made of characters
+  # Expected Enrollment - valid input is:
+    * 1 - 3 digits
+  # Number of TAs Needed
+    * 1 or 2 digits
+  # Number of TAs Assigned
+    * 1 or 2 digits
