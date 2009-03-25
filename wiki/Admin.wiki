@@ -7,9 +7,10 @@ The main admin page contains three links to subpages that implement the function
   * [http://code.google.com/p/cs373-54270c/wiki/AdminSearchApplicants Search Applicants]
   * [http://code.google.com/p/cs373-54270c/wiki/AdminAssignments Assignments]
 
-= Local URL =
+= URL =
 
-http://localhost:8080/admin
+local project: http://localhost:8080/admin
+live release: http://54270c.appspot.com/
 
 = Details =
 Administrators will:
