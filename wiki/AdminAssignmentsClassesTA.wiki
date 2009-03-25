@@ -2,3 +2,7 @@
 = Introduction =
 
 This form queries the database and lists current TA assignments, either by TA or by class based on a flag.
+
+= Local URL =
+
+http://localhost:8080/admin/assignments/classesta
