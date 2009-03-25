@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Page for Faculty to submit preferences for each class
 
 = Introduction =
 
