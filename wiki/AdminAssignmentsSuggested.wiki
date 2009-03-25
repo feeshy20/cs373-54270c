@@ -3,3 +3,7 @@
 = Suggested Assignments =
 
 Displays suggested TA assignments by running SMP algorithm
+
+= Local URL =
+
+http://localhost:8080/admin/assignments/suggested
