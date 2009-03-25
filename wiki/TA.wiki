@@ -2,6 +2,9 @@
 
 = Introduction =
 
+= Local URL =
+
+http://localhost:8080/ta
 
 = Details =
 Applicants will provide the following information:
