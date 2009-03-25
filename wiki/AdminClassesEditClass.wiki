@@ -4,5 +4,8 @@
 
 This form queries the database for a given class and then allows the user to edit all fields
 
+= Local URL =
+
+http://localhost:8080/admin/classes/view/edit
 
 = Details =
