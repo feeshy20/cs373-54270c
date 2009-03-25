@@ -2,7 +2,7 @@
 
 = Introduction =
 
-The Search Applicants subpage for AdminClasses will search the database of courses using the fields listed below.
+The Search subpage for AdminClasses will search the database of courses using the fields listed below.
   * An entry for all fields is not required for a valid search.
   * Each field should have an option to flag that the results are to be ordered by this field.
 
