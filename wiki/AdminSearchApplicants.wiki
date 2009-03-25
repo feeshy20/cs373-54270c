@@ -6,6 +6,10 @@ The Search Applicants subpage for Admin will search the database of TA's using t
   * An entry for all fields is not required for a valid search.
   * Each field should have an option to flag that the results are to be ordered by this field.
 
+= Local URL =
+
+http://localhost:8080/admin/searchapplicants
+
 = Details =
 
   # Phone - valid input is:
