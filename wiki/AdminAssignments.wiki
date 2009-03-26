@@ -1,4 +1,9 @@
 #summary Assignment suggestion and implementation
+
+= Introduction =
+
+A subpage of AdminClasses.
+
 = Assignments =
 
 The Assignments subpage for Admin has two links:
