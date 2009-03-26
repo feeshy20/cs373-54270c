@@ -2,6 +2,8 @@
 
 = Introduction =
 
+A subpage of AdminClasses.
+
 This form will add a new class to the database, using the following fields:
   # Course Designation
   # Instructor Name
