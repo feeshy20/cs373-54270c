@@ -6,9 +6,10 @@ A subpage of AdminClassesViewEdit.
 
 This form queries the database for a given class and then allows the user to edit all fields.
 
-= Local URL =
+= URL =
 
-http://localhost:8080/admin/classes/view/edit
+local project: http://localhost:8080/admin/classes/view/edit
+live release: http://54270c.appspot.com/admin/classes/view/edit
 
 = Class ID =
 
