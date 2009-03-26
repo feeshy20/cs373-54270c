@@ -6,6 +6,8 @@ A subpage of AdminAssignments.
 
 Displays suggested TA assignments by running SMP algorithm
 
-= Local URL =
+= URL =
 
-http://localhost:8080/admin/assignments/suggested
+local project: http://localhost:8080/admin/assignments/suggested
+
+live release: http://54270c.appspot.com/admin/assignments/suggested
