@@ -2,6 +2,8 @@
 
 = Introduction =
 
+A subpage of AdminClassesViewEdit.
+
 This form queries the database for a given class and then allows the user to edit all fields.
 
 = Local URL =
