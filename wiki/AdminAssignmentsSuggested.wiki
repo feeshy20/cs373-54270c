@@ -2,6 +2,8 @@
 
 = Suggested Assignments =
 
+A subpage of AdminAssignments.
+
 Displays suggested TA assignments by running SMP algorithm
 
 = Local URL =
