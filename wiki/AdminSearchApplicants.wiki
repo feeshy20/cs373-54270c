@@ -4,7 +4,6 @@
 
 The Search Applicants subpage for [http://code.google.com/p/cs373-54270c/wiki/Admin Admin] will search the database of TA's using the fields listed below.
   * An entry for all fields is not required for a valid search.
-  * Each field should have an option to flag that the results are to be ordered by this field.
 
 = URL =
 
@@ -28,6 +27,12 @@ This form has four criteria fields:
     * A first name made of characters
     * followed by a required middle initial with an optional period
     * followed by a last name made of characters 
+
+There should be an extra field with a list of options which allows the user to specify if they want the search results ordered.  The list should contain the following options:
+  * No ordering
+  * Order by applicant
+
+Later we might add more ordering options, for now 'by applicant' is fine.
 
 = Example Searches =
     show me the Applicants who specify Networks as their area of
