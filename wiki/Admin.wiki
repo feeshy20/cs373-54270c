@@ -33,6 +33,5 @@ Administrators will:
     # show me the classes that will be taught by Downing
     # show me the classes that have not been assigned a TA
     # show me the classes that John Doe is assigned to TA.
-    This list of queries is illustrative, but not exhaustive.
   # Ask the system for suggested assignments via the SMP algorithm.
   # View, edit the assignment of TAs to classes.
