@@ -11,9 +11,11 @@ This form will add a new class to the database, using the following fields:
   # Number of TAs Needed
   # Number of TAs Assigned
 
-= Local URL =
+= URL =
 
-http://localhost:8080/admin/classes/addnew
+local project: http://localhost:8080/admin/classes/addnew
+
+live release: http://54270c.appspot.com/admin/classes/addnew
 
 = Details =
 
