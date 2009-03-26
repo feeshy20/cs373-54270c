@@ -6,9 +6,11 @@ A subpage of AdminClasses.
 
 This page queries the database and lists all classes and each classes' data.  Each course name will have a link to an [http://code.google.com/p/cs373-54270c/wiki/AdminClassesEditClass Edit Class] page, similar to the Add New class page.
 
-= Local URL =
+= URL =
 
-http://localhost:8080/admin/classes/view
+local project: http://localhost:8080/admin/classes/view
+
+live release: http://54270c.appspot.com/admin/classes/view
 
 = Details =
 
