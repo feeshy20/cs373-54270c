@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Subpage of [http://localhost:8080/ Main Page]
+Subpage of MainPage
 
 = URL =
 
