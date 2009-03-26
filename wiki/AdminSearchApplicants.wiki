@@ -6,9 +6,11 @@ The Search Applicants subpage for [http://code.google.com/p/cs373-54270c/wiki/Ad
   * An entry for all fields is not required for a valid search.
   * Each field should have an option to flag that the results are to be ordered by this field.
 
-= Local URL =
+= URL =
 
-http://localhost:8080/admin/searchapplicants
+local project: http://localhost:8080/admin/searchapplicants
+
+live release: http://54270c.appspot.com/admin/searchapplicants
 
 = Details =
 
