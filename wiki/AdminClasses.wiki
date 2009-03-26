@@ -7,6 +7,8 @@ The class subpage of [http://code.google.com/p/cs373-54270c/wiki/Admin Admin] co
   * [http://code.google.com/p/cs373-54270c/wiki/AdminClassesViewEdit View/Edit]
   * [http://code.google.com/p/cs373-54270c/wiki/AdminClassesSearch Search]
 
-= Local URL =
+= URL =
 
-http://localhost:8080/admin/classes
+local project: http://localhost:8080/admin/classes
+
+live release: http://54270c.appspot.com/admin/classes
