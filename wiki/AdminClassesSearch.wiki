@@ -6,9 +6,11 @@ The Search subpage for AdminClasses will search the database of courses using th
   * An entry for all fields is not required for a valid search.
   * Each field should have an option to flag that the results are to be ordered by this field.
 
-= Local URL = 
+= URL = 
 
-http://localhost:8080/admin/classes/search
+local project: http://localhost:8080/admin/classes/search
+
+live release: http://54270c.appspot.com/admin/classes/search
 
 = Details =
 This form has four criteria fields:
