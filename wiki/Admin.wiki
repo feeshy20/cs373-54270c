@@ -2,6 +2,8 @@
 
 = Introduction =
 
+Subpage of MainPage.
+
 The main admin page contains three links to subpages that implement the functionality listed below.  The three links are:
   * [http://code.google.com/p/cs373-54270c/wiki/AdminClasses Classes]
   * [http://code.google.com/p/cs373-54270c/wiki/AdminSearchApplicants Search Applicants]
