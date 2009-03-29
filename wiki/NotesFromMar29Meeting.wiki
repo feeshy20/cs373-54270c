@@ -45,7 +45,6 @@ Datastore stuff:
   * Semesters
     * Semester: String
     * Unique Id of class as Primary Key into Classes table ***could be actual Unique ID from UT, or not*** : Integer
-    * Professor ID: Integer
 
   * TAs
     * Unique ID generated internally: Integer
