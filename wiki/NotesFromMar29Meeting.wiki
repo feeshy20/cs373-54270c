@@ -46,9 +46,23 @@ Datastore stuff:
     * Native English Speaker Preferred: Boolean
     * Preferred Students: ListOfIntegers (key into Student table)
     * Non-preferred Students: ListOfIntegers (key into Student table)
-    * Area of 
+    * Area of ListOfStrings
+      * potentially this could be a list of ints that keys into a Specializations table
 
   * Semesters
     * Semester: String
     * Unique Id of class as Primary Key into Classes table ***could be actual Unique ID from UT, or not*** : Integer
     * Professor ID: Integer
+
+  * Students
+    * Unique ID generated internally: Integer
+    * Phone Number: PhoneNumber type
+    * Email: String (email type?)
+    * Major: String
+    * PhD: Boolean
+    * UsCitizen: Boolean
+    * EnglishSpeaker: Boolean
+    * PreviousCourses: ListOfStrings
+    * Admission Date: DateTime.DateTime
+    * Supervising Professor: Integer or String ***(needs clarification)***
+    * ProgrammingLanguages: ListOfStrings
