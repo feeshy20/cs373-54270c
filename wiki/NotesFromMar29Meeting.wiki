@@ -24,7 +24,7 @@ Admin asks for a match:
   * Set up those same matches in database (maybe)
 
 Datastore stuff:
-  * Instructor
+  * Faculty
     * Instructor ID: Integer
     * Instructor Name: String
     * Instructor Password: String
