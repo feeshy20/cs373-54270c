@@ -29,10 +29,6 @@ Datastore stuff:
     * Instructor Name: String
     * Instructor Password: String
 
-  * InstructorPreferences
-    * Instructor ID: 
-    * Unique Course ID: Integer
-
   * Classes
     * Unique ID generated internally: Integer
     * Course Designation: String
@@ -51,7 +47,7 @@ Datastore stuff:
     * Unique Id of class as Primary Key into Classes table ***could be actual Unique ID from UT, or not*** : Integer
     * Professor ID: Integer
 
-  * Students
+  * TAs
     * Unique ID generated internally: Integer
     * Phone Number: PhoneNumber type
     * Email: String (email type?)
