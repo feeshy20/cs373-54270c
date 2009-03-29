@@ -46,7 +46,7 @@ Datastore stuff:
     * Native English Speaker Preferred: Boolean
     * Preferred Students: ListOfIntegers (key into Student table)
     * Non-preferred Students: ListOfIntegers (key into Student table)
-    * Area of ListOfStrings
+    * Area of Specialization: ListOfStrings
       * potentially this could be a list of ints that keys into a Specializations table
 
   * Semesters
@@ -66,3 +66,6 @@ Datastore stuff:
     * Admission Date: DateTime.DateTime
     * Supervising Professor: Integer or String ***(needs clarification)***
     * ProgrammingLanguages: ListOfStrings
+    * Area of Specialization: ListOfStrings
+      * potentially this could be a list of ints that keys into a Specializations table
+    * Courses qualified to teach: ListOfStrings
