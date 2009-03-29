@@ -22,3 +22,33 @@ Instructors:
 Admin asks for a match:
   * Give bogus output on SuggestedAssignments.py ***clarify "fake the match"***
   * Set up those same matches in database (maybe)
+
+Datastore stuff:
+  * Applicant
+ 
+
+  * Instructor
+    * Instructor ID: Integer
+    * Instructor Name: String
+    * Instructor Password: String
+
+  * InstructorPreferences
+    * Instructor ID: 
+    * Unique Course ID: Integer
+
+  * Classes
+    * Unique ID generated internally: Integer
+    * Course Designation: String
+    * Instructor ID: Integer
+    * Expected Enrollment: Integer
+    * Number of TA's needed: Integer
+    * Number of TA's assigned: Integer(default to zero)
+    * Native English Speaker Preferred: Boolean
+    * Preferred Students: ListOfIntegers (key into Student table)
+    * Non-preferred Students: ListOfIntegers (key into Student table)
+    * Area of 
+
+  * Semesters
+    * Semester: String
+    * Unique Id of class as Primary Key into Classes table ***could be actual Unique ID from UT, or not*** : Integer
+    * Professor ID: Integer
