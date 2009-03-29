@@ -1,0 +1,24 @@
+#summary Notes from March 29 meeting
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+
+Admin Initialize Semester Page:
+  * Dropdown box w/ Spring, Summer, Fall
+  * Input box for year (validate as four digit number)
+  * Validate that this semester doesn't exist
+  * Upon successful validation, redirect to add/edit class page with current semester selected
+
+Applicants:
+  * Need to know more of the required functionality, specifically about application period window ***ask on blackboard***
+  
+Instructors:
+  * Same as Applicants ***ask on blackboard***
+
+Admin asks for a match:
+  * Give bogus output on SuggestedAssignments.py ***clarify "fake the match"***
+  * Set up those same matches in database (maybe)
