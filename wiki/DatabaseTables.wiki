@@ -3,14 +3,14 @@
 = Introduction =
 
 The following tables are used in the webapp:
-  * Semesters
-  * Faculty
-  * Classes
-  * TAs
   * Courses
   * Majors
   * Programming Languages
   * Specializations
+  * Semesters
+  * Faculty
+  * Classes
+  * TAs
 
 = Courses =
   * Course ID: Integer
