@@ -7,6 +7,26 @@ The following tables are used in the webapp:
   * Faculty
   * Classes
   * TAs
+  * Courses
+  * Majors
+  * Programming Languages
+  * Specializations
+
+= Courses =
+  * Course ID: Integer
+  * Course Name: String
+
+= Majors =
+  * Major ID: Integer
+  * Major Name: String
+
+= Programming Languages =
+  * Language ID: Integer
+  * Language Name: String
+
+= Specializations =
+  * Specialization ID: Integer
+  * Specialization Name: String
 
 = Semesters =
 
@@ -25,7 +45,7 @@ The Faculty table contains the following columns:
 
 The Classes table contains the following columns:
   * Unique ID generated internally: Integer
-  * Course Designation: String
+  * Course ID: Integer
   * Instructor ID: Integer
   * Expected Enrollment: Integer
   * Number of TA's needed: Integer
@@ -33,8 +53,7 @@ The Classes table contains the following columns:
   * Native English Speaker Preferred: Boolean
   * Preferred Students: ListOfIntegers (key into Student table)
   * Non-preferred Students: ListOfIntegers (key into Student table)
-  * Area of Specialization: ListOfStrings
-    * potentially this could be a list of ints that keys into a Specializations table
+  * Area of Specialization: ListOfIntegers (key into Specializations table)
 
 = TAs =
 
@@ -42,14 +61,14 @@ The TAs table contains the following columns:
   * Unique ID generated internally: Integer
   * Phone Number: PhoneNumber type
   * Email: String (email type?)
-  * Major: String
+  * Major ID: Integer
   * PhD: Boolean
   * UsCitizen: Boolean
   * EnglishSpeaker: Boolean
   * PreviousCourses: ListOfStrings
+    * list of integers?? (key into courses table)
   * Admission Date: DateTime.DateTime
-  * Supervising Professor: Integer or String ***(needs clarification)***
-  * ProgrammingLanguages: ListOfStrings
-  * Area of Specialization: ListOfStrings
-    * potentially this could be a list of ints that keys into a Specializations table
-  * Courses qualified to teach: ListOfStrings
+  * Supervising Professor: Integer (key into faculty table)
+  * ProgrammingLanguages IDs: ListOfIntegers (key into programming langauges table)
+  * Area of Specialization: ListOfIntegers (key into Specializations table)
+  * Courses qualified to teach: ListOfIntegers (key into Courses table)
