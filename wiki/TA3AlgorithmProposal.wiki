@@ -24,13 +24,8 @@ The SMP class will have the following member variables:
   * int that the project 4 SMP algorithm will use
  * prefList : int = []
   * list of preferences, ordered by rank, containing their int idNum
-
-== Class Class (gwahaha) ==
-The Class Class will have the following memeber variables:
  * key : key() 
   * object to ClassEntry table for the ClassEntry this object represents
- * numSlots : int
-  * number of open TA slots in current class, found from Table
  * rank1 : List of key()
   * all the key's to TA table entrys that this class ranks as 1
  * rank2 : List of key()
@@ -38,16 +33,10 @@ The Class Class will have the following memeber variables:
  * rank3 : List of key()
   * all the key's to TA table entrys that this class ranks as 3
 
-== TA Class ==
-The Class Class will hvae the following memeber variables:
- * key : key() 
-  * object to TA table for the TA entry this object represents
- * rank1 : List of key()
-  * all the key's to ClassEntry entrys that this TA ranks as 1
- * rank2 : List of key()
-  * all the key's to ClassEntry entrys that this TA ranks as 1
- * rank3 : List of key()
-  * all the key's to ClassEntry entrys that this TA ranks as 1
+== Class Class (gwahaha) ==
+The Class Class will have the following memeber variables:
+ * numSlots : int
+  * number of open TA slots in current class, found from Table
 
 = Main Algorithm = 
 
@@ -102,7 +91,7 @@ For each class in the ClassEntry table:
 This section of the algorithm will produce an integer preference list of each ta entry ta object.
 
 For each ta entry in the TA entry table:
- # Initialize a TA object
+ # Initialize a TA object using the SMP class
  # initialize idNum. can be found from studentIds dict()
  # initialize key. key() to ta entry can be found from ta table object
  # populate rank1 list.  list of history classes 
@@ -133,8 +122,6 @@ Loop until unassignedTA's is empty:
     # for each TA in unassignedTA
      # remove class from rank1/rank2/rank3 list and from prefList
  # add all tempAssignments to assignments
-
-If we get to this point, then we have converted each class and their preferences to integer representations.  With some trickery and shenanigans it should be fairly easy to pipe this into an existing SMP algorithm that has already been written by one of us.
 
 = Important Differences from Project 4 =
 
