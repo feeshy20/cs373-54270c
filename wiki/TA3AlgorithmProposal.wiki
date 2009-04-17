@@ -10,9 +10,15 @@ A class needs some way to give preference to one TA verses another when construc
  * Rank 3: TA has never taught class nor is TA qualified to teach
 
 == Class Ranks for TAs ==
- * Rank 1: TA is prefered
- * Rank 2: TA is niether prefered nor unprefered
- * Rank 3: TA is not prefered
+
+Ranks 1a, 2a and 3a are only activated if the Class instance prefers a native english speaker.  Otherwise native and non-native speakers are both lumped into the normal ranks.
+
+ * Rank 1: TA is preferred
+ * Rank 1a: TA is preferred but is not native english speaker 
+ * Rank 2: TA is neither preferred nor unpreferred
+ * Rank 2a: TA is neither preferred nor unpreferred and is not native english speaker
+ * Rank 3: TA is not preferred
+ * Rank 3a: TA is not preferred and is not a native english speaker
 
 = Helper Classes =
 
@@ -25,18 +31,29 @@ The SMP class will have the following member variables:
  * prefList : int = []
   * list of preferences, ordered by rank, containing their int idNum
  * key : key() 
-  * object to ClassEntry table for the ClassEntry this object represents
+  * object to TA table for the TA or Class entry this object represents
  * rank1 : List of key()
-  * all the key's to TA table entrys that this class ranks as 1
+  * all the key's to ClassEntry entrys that this TA or Class ranks as 1
  * rank2 : List of key()
-  * all the key's to TA table entrys that this class ranks as 2
+  * all the key's to ClassEntry entrys that this TA or Class ranks as 2
  * rank3 : List of key()
-  * all the key's to TA table entrys that this class ranks as 3
+  * all the key's to ClassEntry entrys that this TA or Class ranks as 3
 
 == Class Class (gwahaha) ==
-The Class Class will have the following memeber variables:
+The Class Class will have the following member variables:
  * numSlots : int
   * number of open TA slots in current class, found from Table
+ * prefersEnglish : boolean
+  * indicates whether or not this class prefers native english speakers
+ * rank1a : List of key()
+  * all the key's to ClassEntry entries that this Class ranks as 1a. only initialized if prefersEnglish == True
+ * rank2a : List of key()
+  * all the key's to ClassEntry entries that this Class ranks as 2a. only initialized if prefersEnglish == True
+ * rank3a : List of key()
+  * all the key's to ClassEntry entries that this Class ranks as 3a. only initialized if prefersEnglish == True 
+
+== TA Class ==
+The Class Class will have the following member variables:
 
 = Main Algorithm = 
 
@@ -91,7 +108,7 @@ For each class in the ClassEntry table:
 This section of the algorithm will produce an integer preference list of each ta entry ta object.
 
 For each ta entry in the TA entry table:
- # Initialize a TA object using the SMP class
+ # Initialize a TA object
  # initialize idNum. can be found from studentIds dict()
  # initialize key. key() to ta entry can be found from ta table object
  # populate rank1 list.  list of history classes 
