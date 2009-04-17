@@ -95,13 +95,16 @@ For each class in the ClassEntry table:
  # initialize idNum. can be found from classIds dict()
  # initialize key. key() to class entry can be found from ClassEntry object
  # initialize numSlots.  can be found in ClassEntry table.
- # populate rank1 list.  this is the list of prefered students for the ClassEntry object, be sure to get the key object for that student.
- # populate rank3 list.  list of nonprefered students
- # populate rank2 list.  remaining students in TA table that don't exist in rank1 or rank3.
- # populate prefList.
-  # for each member of rank1, append idNum (using studentIds dict)
-  # for each member of rank2, append idNum
-  # for each member of rank3, append idNum
+ # if prefersEnglish == False
+  # populate rank1 list.  this is the list of prefered students for the ClassEntry object, be sure to get the key object for that student.
+  # populate rank3 list.  list of nonprefered students
+  # populate rank2 list.  remaining students in TA table that don't exist in rank1 or rank3.
+  # populate prefList.
+   # for each member of rank1, append idNum (using studentIds dict)
+   # for each member of rank2, append idNum
+   # for each member of rank3, append idNum
+ # if prefersEnglish == True
+  # populate rank lists (including lists rank1a, 2a and 3a) accordingly.  See above for rules on each rank.
  # add to unassignedClasses
 
 == Set up TA Preferences == 
