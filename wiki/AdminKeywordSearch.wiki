@@ -2,47 +2,30 @@
 
 = Introduction =
 
-The Search Applicants subpage for [http://code.google.com/p/cs373-54270c/wiki/Admin Admin] will search the database of TA's using the fields listed below.
-  * An entry for all fields is not required for a valid search.
+A subpage of [http://code.google.com/p/cs373-54270c/wiki/Admin Admin].
+
+This form will let the administrator search the database for users, classes, and submitted TA applications, using one general search field.
 
 = URL =
 
-local project: http://localhost:8080/admin/searchapplicants
+local project: http://localhost:8080/admin/search
 
-live release: http://54270c.appspot.com/admin/searchapplicants
+live release: http://54270c.appspot.com/admin/search
 
 = Details =
 
-This form has four criteria fields:
+This form has a single search field:
 
-  # Area of Specialization - valid input is:
-    * 0 or more areas selected
-  # Course Name qualified to teach - valid input is:
-    * 1 - 3 characters
-    * followed by exactly 3 digits
-    * followed by 0 or 1 character(s) 
-  # Option to show only applicants whose native language is English- valid input is:
-    * any input is valid, checked or not checked 
-  # Course name of previously TA'd course - valid input is:
-    * 1 - 3 characters
-    * followed by exactly 3 digits
-    * followed by 0 or 1 character(s) 
+  # A general case-insensitive keyword search field - valid input is:
+    * any input is valid
 
-There should be an extra field with a list of options which allows the user to specify if they want the search results ordered.  The list should contain the following options:
-  * No ordering
-  * Order by applicant
-
-Later we might add more ordering options, for now 'by applicant' is fine.
+The search implementation is:
+  * The search page parses the input and looks for course designations.  This is done using the courseDesignation Validator.  If any classes exist with the searched course designation, then they will be displayed in the "Classes Results" table.
+  * Then the input is parsed for EID's.  This is done using the EID Validator.  If any of the searched EID's correspond to a user in the database, the user is added to the list of "Users Results"
+  * Then the input is used to search user's names.  If any of the names correspond to a user in the database, the user is added to the list of "Users Results"
 
 = Example Searches =
-    show me the Applicants who specify Networks as their area of
-    specialization
-
-    show me the Applicants, in rank order, who specify cs302 as a course
-    they feel qualified to teach
-
-    show me the Applicants, in rank order, who are native English
-    speakers and have specified Operating Systems as their area of
-    specialization
-
-    show me the Applicants who have TA'ed cs352 previously
+  * "CS315" would return all instances of CS315
+  * "Glenn Downing" would return with the faculty member "Glenn Downing" in the users results
+  * "downing" would return with the faculty member "Glenn Downing" in the users results (and anyone else with downing as part of their name)
+  * "cs315 glenn downing" would return the combined results of the first two searches
