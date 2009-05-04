@@ -1,0 +1,13 @@
+#summary Add a new major to the database
+
+= Intrdocution: =
+
+A subpage of [http://code.google.com/p/cs373-54270c/wiki/Admin Admin].
+
+This form will add a major to the database.
+
+= URL =
+http://localhost:8080/admin/system/addmajor
+
+http://54270c.appspot.com/admin/system/addmajor
+
