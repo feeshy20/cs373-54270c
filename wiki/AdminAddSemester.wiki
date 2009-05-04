@@ -2,8 +2,23 @@
 
 = Introduction =
 
-Allows admin to add a semester to database
+A subpage of [http://code.google.com/p/cs373-54270c/wiki/Admin Admin].
+
+This form will add a new semester to the database, using the following fields:
+  # Session (i.e. Fall, Spring, or Summer)
+  # Year
+
+= URL =
+
+local project: http://localhost:8080/admin/system/addsemester
+
+live release: http://54270c.appspot.com/admin/system/addsemester
 
 = Details =
 
-This page has two fields for input.  
+Administrator will provide the following information:
+
+  # Session - valid input is:
+    * one of "Summer", "Fall", or "Spring" selected.  This is enforced by ensuring that the value of the form field isn't an empty string.
+  # Year - valid input is:
+    * exactly 4 digits
