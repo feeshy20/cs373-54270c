@@ -13,36 +13,40 @@ live release: http://54270c.appspot.com/admin/searchapplicants
 
 = Details =
 
+None of the fields are required.  Leaving a field alone is a "no preference."  Thus, a submission with no preferences returns all applicants in the history of the datastore.
+
 This form has four criteria fields:
 
-  # Area of Specialization - valid input is:
-    * 0 or more areas selected
-  # Course Name qualified to teach - valid input is:
-    * 1 - 3 characters
-    * followed by exactly 3 digits
-    * followed by 0 or 1 character(s) 
-  # Option to show only applicants whose native language is English- valid input is:
-    * any input is valid, checked or not checked 
-  # Course name of previously TA'd course - valid input is:
-    * 1 - 3 characters
-    * followed by exactly 3 digits
-    * followed by 0 or 1 character(s) 
+  # Semester preference: Dropdown box (default value is all semesters).
+    * Returns applicants that applied for a specific semester. If left alone, applicants across all semesters are returned.
+  # Assigned or Unassigned applicants:  Dropdown box (default value is Both).
+    * Returns only applicants who are assigned or unassigned, or both if left alone.
+  # Native English speaker preference:  Checkbox
+    * If checked, the search returns only applicants who are native English speakers.
+  # U.S. Citizen preference:  Checkbox
+    * If checked, the search returns only applicants who are U.S. Citizens.
+  # Supervising professor preference:  Dropdown box.
+    * Returns only applicants whose supervising professor is selected.
+  # Specialization preference:  Multi-select field.
+    * Returns only applicants who have listed ALL selected specializations.
+  # Assigned to specific courses: Multi-select field.
+    * Returns only applicants who are assigned to the selected class
+  # Previously taught course preference: Multi-select field.
+    * Returns only applicants who have taught a specified course
+  # Programming language preference: Multi-select field.
+    * Returns only applicants who have listed ALL programming languages specified.
+ 
+These fields can be combined in any way to filter results.
 
-There should be an extra field with a list of options which allows the user to specify if they want the search results ordered.  The list should contain the following options:
-  * No ordering
-  * Order by applicant
+= Implementation =
+The search works by building a dictionary where the keys for all applicants in the datastore are the keys, with boolean values for the values.  Then each field is tested for input.  If input is present, a loop through all applicants to test for the appropriate property is performed.  An example:
 
-Later we might add more ordering options, for now 'by applicant' is fine.
+{{{
+        if self.formFields[4].input != "" :
+            for applicant_key in resultsDict.keys() :
+                x = db.get(applicant_key)
+                if x.supervisingProfessor != self.formFields[4].input :
+                    resultsDict[applicant_key] = False
+}}}
 
-= Example Searches =
-    show me the Applicants who specify Networks as their area of
-    specialization
-
-    show me the Applicants, in rank order, who specify cs302 as a course
-    they feel qualified to teach
-
-    show me the Applicants, in rank order, who are native English
-    speakers and have specified Operating Systems as their area of
-    specialization
-
-    show me the Applicants who have TA'ed cs352 previously
+The above code finds applicants who do not list the specified instructor as a supervising professor.  It then sets that applicants value to False in the dictionary.  When results are returned, only those whose values in the dictionary are still True will be displayed.
