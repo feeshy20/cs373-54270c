@@ -15,7 +15,7 @@ live release: http://54270c.appspot.com/admin/searchapplicants
 
 None of the fields are required.  Leaving a field alone is a "no preference."  Thus, a submission with no preferences returns all applicants in the history of the datastore.
 
-This form has four criteria fields:
+This form has criteria fields:
 
   # Semester preference: Dropdown box (default value is all semesters).
     * Returns applicants that applied for a specific semester. If left alone, applicants across all semesters are returned.
