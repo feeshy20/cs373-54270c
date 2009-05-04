@@ -4,7 +4,7 @@
 
 A subpage of [http://code.google.com/p/cs373-54270c/wiki/Admin Admin].
 
-This form will add a new course to the database, using the following field:
+This form will add a new course to the database, using the following fields:
   # EID
   # User Name
 
