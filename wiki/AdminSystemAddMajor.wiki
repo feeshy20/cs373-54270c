@@ -15,6 +15,8 @@ http://54270c.appspot.com/admin/system/addmajor
 = Details =
 
 Administrator will provide the following information:
-
+  
+  # Current active semester is displayed
   # Major Name - valid input is:
     * any non-empty string of text
+  # Current Majors in database are displayed
