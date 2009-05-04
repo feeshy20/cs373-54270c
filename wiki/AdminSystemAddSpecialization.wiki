@@ -4,7 +4,8 @@
 
 A subpage of [http://code.google.com/p/cs373-54270c/wiki/Admin Admin].
 
-This form will add an area of specialization to the database.
+This form will add a new course to the database, using the following field:
+  # Area of Specialization
 
 = URL =
 
