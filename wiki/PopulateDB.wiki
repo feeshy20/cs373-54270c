@@ -4,6 +4,8 @@
 
 This page loads any testdata that has not yet been loaded into the datastore.
 
+= URL =
+live release: http://54270c.appspot.com/admin/searchapplicants
 
 = Details =
 
@@ -29,7 +31,7 @@ It loads:
 
  - Applications: from applicants.txt, provided on Blackboard.
 
-Example of a data entry: 
+ = Example of a data entry = 
 
 {{{
         taQuery = db.GqlQuery("SELECT * FROM UserEntry WHERE eid = :1", "gk100")
