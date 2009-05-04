@@ -14,9 +14,11 @@ live release: http://54270c.appspot.com/admin/system/adduser
 
 = Details =
    
+   # Current active semester is displayed
    # EID - valid input is:
     * Two letters
     * followd by three digits
    # User Name - valid input is:
     * A first name made of characters
     * followed by a last name made of characters
+   # Current admins in database are displayed
