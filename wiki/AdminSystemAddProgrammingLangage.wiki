@@ -1,0 +1,19 @@
+#summary Adds a programming language to the database
+
+= Introduction =
+
+A subpage of [http://code.google.com/p/cs373-54270c/wiki/Admin Admin].
+
+This form will add an admin user to the database.
+
+= URL =
+
+local project: http://localhost:8080/admin/system/addlanguage
+
+live release: http://54270c.appspot.com/admin/system/addlanguage
+
+= Details =
+   
+   # Current active semester is displayed
+   # Programming Language
+   # Current programming languages in database are displayed
