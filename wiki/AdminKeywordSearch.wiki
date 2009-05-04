@@ -1,0 +1,48 @@
+#summary Keyword Search Engine
+
+= Introduction =
+
+The Search Applicants subpage for [http://code.google.com/p/cs373-54270c/wiki/Admin Admin] will search the database of TA's using the fields listed below.
+  * An entry for all fields is not required for a valid search.
+
+= URL =
+
+local project: http://localhost:8080/admin/searchapplicants
+
+live release: http://54270c.appspot.com/admin/searchapplicants
+
+= Details =
+
+This form has four criteria fields:
+
+  # Area of Specialization - valid input is:
+    * 0 or more areas selected
+  # Course Name qualified to teach - valid input is:
+    * 1 - 3 characters
+    * followed by exactly 3 digits
+    * followed by 0 or 1 character(s) 
+  # Option to show only applicants whose native language is English- valid input is:
+    * any input is valid, checked or not checked 
+  # Course name of previously TA'd course - valid input is:
+    * 1 - 3 characters
+    * followed by exactly 3 digits
+    * followed by 0 or 1 character(s) 
+
+There should be an extra field with a list of options which allows the user to specify if they want the search results ordered.  The list should contain the following options:
+  * No ordering
+  * Order by applicant
+
+Later we might add more ordering options, for now 'by applicant' is fine.
+
+= Example Searches =
+    show me the Applicants who specify Networks as their area of
+    specialization
+
+    show me the Applicants, in rank order, who specify cs302 as a course
+    they feel qualified to teach
+
+    show me the Applicants, in rank order, who are native English
+    speakers and have specified Operating Systems as their area of
+    specialization
+
+    show me the Applicants who have TA'ed cs352 previously
