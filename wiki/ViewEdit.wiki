@@ -1,0 +1,32 @@
+#summary Admin can change class properties.
+
+= Introduction =
+
+The View/Edit classes subpage allows an admin to specify a class, then modify the class's instructor, expected enrollment, number of TAs needed, and number of TAs assigned.
+  * An active semester *must* be initiated for this page to display classes to edit.
+
+= URL =
+
+local project: http://localhost:8080/admin/classes/edit
+
+live release: http://54270c.appspot.com/admin/classes/edit
+
+= Details =
+
+Upon first visit, the user is presented with a select field containing the classes present during the Active Semester.
+
+When the user selects a class to modify, four criteria appear:
+
+  # Class instructor: Dropdown box (default value is the current instructor)
+    * Will change the instructor of the course to the specified instructor
+  # Expected enrollment:  Textbox (default value is the current expected enrollment).
+    * Will change the expected enrollment of the class.
+  # Number of needed TAs:  Textbox (default value is the current expected enrollment).
+    * Will change the desired number of TAs for the class.
+  # Number of assigned TAs:  Textbox
+    * This, perhaps, shouldn't be here.  But it changes the number of assigned TAs, which only will affect the algorithm for matching TAs.
+
+None of these fields are required.
+
+= Implementation =
+The fields are populated with their default values by querying the datastore for the ClassEntry specified by the user upon his/her first visit.  Upon submission, the datastore will be updated with the changes, if any.
