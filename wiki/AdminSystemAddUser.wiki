@@ -1,0 +1,22 @@
+#summary Adds an admin to the database
+
+= Introduction =
+
+A subpage of [http://code.google.com/p/cs373-54270c/wiki/Admin Admin].
+
+This form will add an admin user to the database.
+
+= URL =
+
+local project: http://localhost:8080/admin/system/adduser
+
+live release: http://54270c.appspot.com/admin/system/adduser
+
+= Details =
+   
+   # EID - valid input is:
+    * Two letters
+    * followd by three digits
+   # User Name - valid input is:
+    * A first name made of characters
+    * followed by a last name made of characters
