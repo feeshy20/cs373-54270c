@@ -4,9 +4,17 @@
 
 Subpage of MainPage.
 
-The main admin page contains three links to subpages that implement the functionality listed below.  The three links are:
-  * [http://code.google.com/p/cs373-54270c/wiki/AdminClasses Classes]
+The main admin page contains links to subpages that implement the functionality listed below.
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminSearchClasses Search Classes]
   * [http://code.google.com/p/cs373-54270c/wiki/AdminSearchApplicants Search Applicants]
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminKeywordSearch Keyword Search]
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminAddSemester Add a Semester]
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminAddCourse Add a Course]
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminAddClass Add a Class]
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminAddMajor Add a Major]
+
+  * [http://code.google.com/p/cs373-54270c/wiki/AdminEditSemesterPermissions Edit Semester Permissions]
+
   * [http://code.google.com/p/cs373-54270c/wiki/AdminAssignments Assignments]
 
 = URL =
