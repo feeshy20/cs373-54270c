@@ -2,12 +2,23 @@
 
 = Introduction =
 
-Add your content here.
+A subpage of [http://code.google.com/p/cs373-54270c/wiki/Admin Admin].
 
+This form will allow the admin to edit the following permissions for the selected semester:
+  # Set to Current Semester
+  # Who is allowed into the system
+
+
+= URL =
+http://localhost:8080/admin/editsemesterpermissions
+
+http://54270c.appspot.com/admin/editsemesterpermissions
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+After selecting the desired semester to edit, the administrator will provide the following information:
+
+  # Set to Current Semester - valid input is:
+    * one of "yes" or "no".  This is enforced by checking that the field input isn't an empty string.  Note: selecting "no" for this field will automatically lock out students and faculty for this semester.
+  # Who is allowed into the system - valid input is:
+    * one of "Students", "Faculty", or "Neither".  This is enforced by checking that the field input isn't an empty string.  Note: only one user type (of Students and Faculty) can have access to the system at one time.
