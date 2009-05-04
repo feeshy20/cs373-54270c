@@ -1,13 +1,20 @@
 #summary Add a new major to the database
 
-= Intrdocution: =
+= Introduction: =
 
 A subpage of [http://code.google.com/p/cs373-54270c/wiki/Admin Admin].
 
-This form will add a major to the database.
+This form will add a new course to the database, using the following field:
+  # Major Name
 
 = URL =
 http://localhost:8080/admin/system/addmajor
 
 http://54270c.appspot.com/admin/system/addmajor
 
+= Details =
+
+Administrator will provide the following information:
+
+  # Major Name - valid input is:
+    * any non-empty string of text
