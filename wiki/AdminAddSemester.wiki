@@ -1,0 +1,9 @@
+#summary Allows admin to add a semester to database
+
+= Introduction =
+
+Allows admin to add a semester to database
+
+= Details =
+
+This page has two fields for input.  
