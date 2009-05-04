@@ -8,7 +8,7 @@ This page loads any testdata that has not yet been loaded into the datastore.
 = Details =
 
 This page is accessed by the link "Populate DB with test data."
-Its get() method simply queries the datastore to see if a specific entity has already been put().  If not, it creates the Entry and calls put().  This guarantees nonduplicate data.
+PopulateDB.py's get() method simply queries the datastore to see if a specific entity has already been put().  If not, it creates the Entry and calls put().  This guarantees nonduplicate data.
 
 It loads:
  - Majors:  Computer Science, Electrical Engineering, Computer Engineering.
@@ -28,3 +28,14 @@ It loads:
  - Classes: from course_instances.txt, provided on Blackboard.
 
  - Applications: from applicants.txt, provided on Blackboard.
+
+Example of a data entry: 
+
+{{{
+        instructorQuery = db.GqlQuery("SELECT * FROM UserEntry WHERE eid = :1", "gk100")
+        if instructorQuery.count() == 0 :
+            self.taEntry = Tables.UserEntry(eid = "gk100", name = "Gupta Kumar", userType = "ta")
+            self.taEntry.put()
+        else :
+            self.taEntry = instructorQuery[0]
+}}}
