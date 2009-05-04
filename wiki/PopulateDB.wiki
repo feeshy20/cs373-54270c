@@ -32,10 +32,10 @@ It loads:
 Example of a data entry: 
 
 {{{
-        instructorQuery = db.GqlQuery("SELECT * FROM UserEntry WHERE eid = :1", "gk100")
-        if instructorQuery.count() == 0 :
+        taQuery = db.GqlQuery("SELECT * FROM UserEntry WHERE eid = :1", "gk100")
+        if taQuery.count() == 0 :
             self.taEntry = Tables.UserEntry(eid = "gk100", name = "Gupta Kumar", userType = "ta")
             self.taEntry.put()
         else :
-            self.taEntry = instructorQuery[0]
+            self.taEntry = taQuery[0]
 }}}
