@@ -16,4 +16,5 @@ live release: http://54270c.appspot.com/admin/system/addlanguage
    
    # Current active semester is displayed
    # Programming Language
+      * any input is valid
    # Current programming languages in database are displayed
