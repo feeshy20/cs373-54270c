@@ -1,0 +1,13 @@
+#summary Smp Trigger
+
+= Introduction =
+
+A subpage of [http://code.google.com/p/cs373-54270c/wiki/Admin Admin].
+
+This page runs the [http://code.google.com/p/cs373-54270c/wiki/TA3AlgorithmProposal SMP algorithm] and then redirects to the FinalizeSuggestedAssignments page.
+
+= URL =
+
+local project: http://localhost:8080/admin/assignments/finalized
+
+live release: http://54270c.appspot.com/admin/assignments/finalized
