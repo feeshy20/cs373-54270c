@@ -22,6 +22,6 @@ The are three groups of users for the proposed system:
 system
 
 This page has one field, a login field:
-  * valid input is one of either "ta", "admin", or "faculty"
+  * valid input is an eid of an existing user
 
 Upon successful login, the user is redirected to the appropriate page.
