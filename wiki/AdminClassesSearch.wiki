@@ -4,7 +4,6 @@
 
 The Search subpage for AdminClasses will search the database of courses using the fields listed below.
   * An entry for all fields is not required for a valid search.
-  * Each field should have an option to flag that the results are to be ordered by this field.
 
 = URL = 
 
@@ -13,25 +12,39 @@ local project: http://localhost:8080/admin/classes/search
 live release: http://54270c.appspot.com/admin/classes/search
 
 = Details =
-This form has four criteria fields:
-  # Estimated TA Allotment - valid input is:
-    * 1 or 2 digits
-  # Instructor Name - valid input is:
-    * A first name made of characters
-    * followed by a required middle initial with an optional period
-    * followed by a last name made of characters 
-  # Option to show only courses with no TA assigned - valid input is:
-    * any input is valid, checked or not checked
-  # Assigned TA's Name - valid input is:
-    * A first name made of characters
-    * followed by a required middle initial with an optional period
-    * followed by a last name made of characters 
+None of the fields are required.  Leaving a field alone is a "no preference."  Thus, a submission with no preferences returns all applicants in the history of the datastore.
 
-= Example Queries =
-    show me the classes for which the estimated TA allotment is 2
+This form has criteria fields:
 
-    show me the classes that will be taught by Downing
+  # Semester preference: Dropdown box (default value is all semesters).
+    * Returns classes for a specified semester.
+  # Filled or Unfilled classes:  Dropdown box (default value is Both).
+    * Returns only that have either been assigned the appropriate number of TAs or those that still need to be assigned its allotment.
+  # Native English speaker preference:  Checkbox
+    * If checked, the search returns only classes that require native English speakers.
+  # Instructor preference:  Dropdown box.
+    * Returns only classes taught by the specified instructor.
+  # Specialization preference:  Select field.
+    * Returns only classes that require the selected specialization.
+  # TA preference: Select field.
+    * Returns only classes that have been assigned the specified TA
+  # Unique Number search: Textbox field.
+    * Returns the class that has the unique number entered, if any.  The unique number must be a valid 5-digit integer.
 
-    show me the classes that have not been assigned a TA
+These fields can be combined in any way to filter results.
 
-    show me the classes that John Doe is assigned to TA.
+= Implementation = 
+
+The search works by building a dictionary where the key-value pairs consist of the datastore (google assigned) key for each ClassEntry, and a boolean value. Each field is tested for input. If input is present, a loop through all ClassEntrys to test for the appropriate property is performed. An example: 
+
+{{{
+        if self.formFields[1].input != "" :
+            for class_key in resultsDict.keys() :
+                x = db.get(class_key)
+                if self.formFields[1].input == "Filled" and x.numAssignedTAs != x.numNeededTAs :
+                    resultsDict[class_key] = False
+                elif self.formFields[1].input == "Unfilled" and x.numAssignedTAs == x.numNeededTAs :  
+                    resultsDict[class_key] = False
+}}}
+
+This code decides whether a ClassEntry has been assigned its allotment of TAs (filled), or not (unfilled).  When results are returned, only those whose value in the key-value pair remains True are displayed.
