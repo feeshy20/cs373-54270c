@@ -1,0 +1,72 @@
+# Introduction #
+
+The following tables are used in the webapp:
+  * Courses
+  * Majors
+  * Programming Languages
+  * Specializations
+  * Semesters
+  * Faculty
+  * Classes
+  * TAs
+
+# Courses #
+  * Course ID: Integer
+  * Course Name: String
+
+# Majors #
+  * Major ID: Integer
+  * Major Name: String
+
+# Programming Languages #
+  * Language ID: Integer
+  * Language Name: String
+
+# Specializations #
+  * Specialization ID: Integer
+  * Specialization Name: String
+
+# Semesters #
+
+The Semesters table contains the following columns:
+  * Semester: String
+  * Unique Id of class as Primary Key into Classes table **could be actual Unique ID from UT, or not** : Integer
+
+# Faculty #
+
+The Faculty table contains the following columns:
+  * Instructor ID: Integer
+  * Instructor Name: String
+  * Instructor Password: String
+
+# Classes #
+
+The Classes table contains the following columns:
+  * Unique ID generated internally: Integer
+  * Course ID: Integer
+  * Instructor ID: Integer
+  * Expected Enrollment: Integer
+  * Number of TA's needed: Integer
+  * Number of TA's assigned: Integer(default to zero)
+  * Native English Speaker Preferred: Boolean
+  * Preferred Students: ListOfIntegers (key into Student table)
+  * Non-preferred Students: ListOfIntegers (key into Student table)
+  * Area of Specialization: ListOfIntegers (key into Specializations table)
+
+# TAs #
+
+The TAs table contains the following columns:
+  * Unique ID generated internally: Integer
+  * Phone Number: PhoneNumber type
+  * Email: String (email type?)
+  * Major ID: Integer
+  * PhD: Boolean
+  * UsCitizen: Boolean
+  * EnglishSpeaker: Boolean
+  * PreviousCourses: ListOfStrings
+    * list of integers?? (key into courses table)
+  * Admission Date: DateTime.DateTime
+  * Supervising Professor: Integer (key into faculty table)
+  * ProgrammingLanguages IDs: ListOfIntegers (key into programming langauges table)
+  * Area of Specialization: ListOfIntegers (key into Specializations table)
+  * Courses qualified to teach: ListOfIntegers (key into Courses table)

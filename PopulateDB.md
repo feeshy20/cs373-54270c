@@ -1,0 +1,41 @@
+# Introduction #
+
+This page loads any testdata that has not yet been loaded into the datastore.
+
+# URL #
+live release: http://54270c.appspot.com/admin/searchapplicants
+
+# Details #
+
+This page is accessed by the link "Populate DB with test data."
+PopulateDB.py's get() method simply queries the datastore to see if a specific entity has already been put().  If not, it creates the Entry and calls put().  This guarantees nonduplicate data.
+
+It loads:
+> - Majors:  Computer Science, Electrical Engineering, Computer Engineering.
+
+> - Programming Languages:  C, C++, LISP, Java, Ruby, Perl, Python, Assembly, Visual Basic, Pascal.
+
+> - Specializiations:  Microprocessor and VLSI Design, Networks, Graphics, Operating Systems, Computer Vision, Theory, Software Engineering, Natural Language Processing, Parallel Computing.
+
+> - Semesters:  Spring 2008, Fall 2008, Spring 2009
+
+> - Instructors:  Glenn Downing, Don Fussell, Vicki Almstrum, Dana Ballard, Ray Mooney, Vijaya Ramachandran, William Young, Lorenzo Alvisi, Doug Berger, Mohamed Gouda.
+
+> - TAs:  Steven Baggs, Jessica Higgins, Bob Mathews, Ahmadi Alagappan, Henry Huntington, Gupta Kumar, Paolo Giovanni, Mona Liz.
+
+> - Courses: from courses.txt, provided on Blackboard.
+
+> - Classes: from course\_instances.txt, provided on Blackboard.
+
+> - Applications: from applicants.txt, provided on Blackboard.
+
+> # Example of a data entry #
+
+```
+        taQuery = db.GqlQuery("SELECT * FROM UserEntry WHERE eid = :1", "gk100")
+        if taQuery.count() == 0 :
+            self.taEntry = Tables.UserEntry(eid = "gk100", name = "Gupta Kumar", userType = "ta")
+            self.taEntry.put()
+        else :
+            self.taEntry = taQuery[0]
+```

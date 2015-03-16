@@ -1,0 +1,29 @@
+# Introduction #
+
+A subpage of [Admin](http://code.google.com/p/cs373-54270c/wiki/Admin).
+
+This form will let the administrator search the database for users, classes, and submitted TA applications, using one general search field.
+
+# URL #
+
+local project: http://localhost:8080/admin/search
+
+live release: http://54270c.appspot.com/admin/search
+
+# Details #
+
+This form has a single search field:
+
+  1. A general case-insensitive keyword search field - valid input is:
+    * any input is valid
+
+The search implementation is:
+  * The search page parses the input and looks for course designations.  This is done using the courseDesignation Validator.  If any classes exist with the searched course designation, then they will be displayed in the "Classes Results" table.
+  * Then the input is parsed for EID's.  This is done using the EID Validator.  If any of the searched EID's correspond to a user in the database, the user is added to the list of "Users Results"
+  * Then the input is used to search user's names.  If any of the names correspond to a user in the database, the user is added to the list of "Users Results"
+
+# Example Searches #
+  * "CS315" would return all instances of CS315
+  * "Glenn Downing" would return with the faculty member "Glenn Downing" in the users results
+  * "downing" would return with the faculty member "Glenn Downing" in the users results (and anyone else with downing as part of their name)
+  * "cs315 glenn downing" would return the combined results of the first two searches

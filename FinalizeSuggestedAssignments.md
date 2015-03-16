@@ -1,0 +1,11 @@
+# Finalize Suggested Assignments #
+
+A subpage of [Admin](http://code.google.com/p/cs373-54270c/wiki/Admin).
+
+This page displays all non-finalized assignments that exist for the current active semester.  When a displayed assignment is checked and the form is submitted, the checked assignment's state is changed to finalized.  The page redirects to the Finalized Assignments page after submission.
+
+# URL #
+
+local project: http://localhost:8080/admin/assignments/suggested
+
+live release: http://54270c.appspot.com/admin/assignments/suggested

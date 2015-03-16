@@ -1,0 +1,59 @@
+# Introduction #
+
+Subpage of MainPage
+
+# URL #
+
+local project: http://localhost:8080/ta
+
+live release: http://54270c.appspot.com/ta
+
+# Details #
+Applicants will provide the following information:
+
+  1. Phone - valid input is:
+    * 3 digits at the beginning of the field
+    * followed by a hyphen
+    * followed by 3 digits
+    * followed by a hyphen
+    * followed by exactly 4 digits, and nothing else.
+  1. E-mail - valid input is:
+    * 0 or more alphanumeric characters or a '.' at the beginning of the field
+    * followed by at least one alphanumeric character
+    * followed by 0 or more alphanumeric characters or a '.'
+    * followed by '@'
+    * followed by 1 or more groups of (1 or more alphanumeric characters followed by a '.')
+    * followed by 1 or more alphanumeric characters, and nothing else
+  1. Major field - valid input is:
+    * the selection is valid if the user selected something from the drop-down menu.  This is enforced by checking that the value of the select element isn't an empty string.
+  1. Admission date - valid input is:
+    * a 0 followed by any number in range 1-9 at the beginning of the field OR a 1 followed by 0, 1, or 2 at the beginning of the field
+    * followed by a '-'
+    * followed by a 0 followed by any number in range 1-9 OR followed by a 1 or 2 followed by any digit OR a 3 followed by a 0 or 1
+    * followed by a '-'
+    * followed by any 4 digits
+  1. Degree Type - valid input is:
+    * one of "PhD" or "Masters" is selected.  This is validated by checking that the value of the element isn't an empty string.
+  1. Supervising professor - valid input is:
+    * one of the names is selected from the drop-down list.  This is validated by checking that the value of the element isn't an empty string.
+  1. Citizen or resident - valid input is:
+    * one of "U.S. Citizen" or "U.S. Resident" is selected.  This is validated by checking that the value of the element isn't an empty string.
+  1. Native english speaker - valid input is:
+    * one of "yes" or "no" is selected. This is validated by checking that the value of the element isn't an empty string.
+  1. TA history - valid input is:
+    * 0 or more of the choices are selected, i.e. any input is valid.
+  1. Programming languages - valid input is:
+    * 0 or more of the choices are selected, i.e. any input is valid.
+  1. Areas of specialization - valid input is:
+    * 0 or more of the choices are selected, i.e. any input is valid.
+  1. Courses qualified to teach - valid input is:
+    * 0 or more of the choices are selected, i.e. any input is valid.
+
+The system will keep a record of the semesters in which the applicant
+applied to be a TA and the history of TA assignments that the Applicant
+received. The system should be able to answer queries like these posed
+by Administrators:
+
+  * find the applicants that have applied 3 or more times and who have received 0 assignments
+
+  * find the applicants who have been assigned to cs315 previously
